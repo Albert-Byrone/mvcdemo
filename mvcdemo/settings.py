@@ -9,11 +9,16 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
+from traceback import print_tb
+from dotenv import load_dotenv
+load_dotenv()
 import environ
 from pathlib import Path
 import os
 env = environ.Env()
 environ.Env.read_env()
+
+print("=============",env)
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -24,7 +29,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY =  os.getenv('SECRET_KEY')
+print(SECRET_KEY)
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -43,8 +50,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     # register the installed app
-    'mvcapp'
+    'mvcapp',
+    'crispy_forms'
 ]
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -89,8 +98,6 @@ DATABASES = {
            'HOST': env('DB_HOST'),
            'PORT': '',
        }
-       
-    }
 }
 
 
