@@ -6,13 +6,13 @@
 ## Description  
 
 This is a simple CRUD application to demonstrate the implementation of MVC/MVT design pattern in Django
-  
-##  Live Link  
-Click 
-  
+
+
 ## Setup and Installation  
+
 To get the project .......  
-  
+
+
 ##### Cloning the repository:  
  ```bash 
 https://github.com/Albert-Byrone/mvcdemo
@@ -47,7 +47,7 @@ Open the application on your browser `127.0.0.1:8000`.
   
 ## Technology used  
   
-* [Python3.8.10](https://www.python.org/)  
+* [Python 3.8.10](https://www.python.org/)  
 * [Django 4.0.4](https://docs.djangoproject.com/en/4.0/)  
 * [Heroku](https://heroku.com)  
   
@@ -57,6 +57,7 @@ Open the application on your browser `127.0.0.1:8000`.
   
 ## Contact Information   
 If you have any question or contributions, please email me at albertbyrone1677@gmail.com
-## License 
 
+## License 
+* MIT License:*
 * Copyright (c) 2020 **Albert Byrone**
