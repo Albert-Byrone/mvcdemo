@@ -1,4 +1,9 @@
-from django.shortcuts import render
+from multiprocessing import context
+from django import forms
+from django.shortcuts import redirect, render
+from mvcapp.forms import StudentForm
+from mvcapp.models import Student
+
 
 # Create your views here.
 def student_list(request):
@@ -24,3 +29,8 @@ def add_student(request, id=0):
         return redirect('list')
 
 
+
+def student_delete(request, id):
+    student = Student.objects.get(pk=id)
+    student.delete()
+    return redirect('list')
