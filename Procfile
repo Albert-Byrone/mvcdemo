@@ -1,1 +1,1 @@
-web: gunicorn mvcapp.wsgi
+web: gunicorn mvcdemo.wsgi
