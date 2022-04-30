@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static  %}
+{% block content %}
+<div class="container">
+    <ul class="responsive-table">
+      <li class="table-header">
+        <div class="col col-1">Class</div>
+        <div class="col col-2">Full Name</div>
+        <div class="col col-3">Mobile</div>
+        <div class="col col-4">Student No.</div>
+        <div class="col col-4">
+             <a href="{% url 'add-student' %}" class="btn btn-outline-success text-black-50">
+                    <i class="fa-solid fa-plus"></i> Add New
+                </a>
+        </div>
+      </li>
+      {% for student  in student_list %}
+      <li class="table-row">
+        <div class="col col-1" data-label="Job Id">{{ student.classname}}</div>
+        <div class="col col-2" data-label="Customer Name">{{ student.fullname}}</div>
+        <div class="col col-3" data-label="Amount">{{ student.phonenumber}}</div>
+        <div class="col col-4" data-label="Payment Status">{{ student.student_number}}</div>
+        <div class="col col-4" data-label="Payment Status">
+            <a href="{% url 'student-update' student.id %}" class="btn text-secondary px-0">
+                <i class="fa-solid fa-pen-to-square"></i>
+                </a>
+                <form action="{% url 'delete-student' student.id %}" method="POST" class="d-inline">
+                    <button type="submit" class="btn">
+                        {% csrf_token %}
+                        <i class="far fa-trash-alt  text-danger float-right"></i>
+                    </button>
+                </form>
+        </div>
+
+      </li>
+      {% endfor %}
+
+     
+    </ul>
+  </div>
+{% endblock content%}
