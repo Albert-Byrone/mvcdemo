@@ -19,7 +19,7 @@ https://github.com/Albert-Byrone/mvcdemo
 ```
 ##### Navigate into the folder and install requirements  
  ```bash 
-cd Hood-Watch pip install -r requirements.txt 
+cd mvcdemo pip install -r requirements.txt 
 ```
 ##### Install and activate Virtual  
  ```bash 
