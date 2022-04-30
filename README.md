@@ -23,7 +23,7 @@ cd Hood-Watch pip install -r requirements.txt
 ```
 ##### Install and activate Virtual  
  ```bash 
-- python3 -m venv virtual - source virtual/bin/activate  
+python3 -m venv virtual - source virtual/bin/activate  
 ```  
 ##### Install Dependencies  
  ```bash 
