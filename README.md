@@ -43,8 +43,19 @@ python manage.py makemigrations
  python manage.py runserver 
 ``` 
 Open the application on your browser `127.0.0.1:8000`.  
-  
-  
+
+
+##### Screenshots
+
+| HOME SCREEN                                     | ADD DATA                                        |
+|-------------------------------------------------|----------------------------------------------------|
+| <img src="https://i.ibb.co/BqfvVRq/list.png" height="200px">     | <img src="https://i.ibb.co/Vmkh24T/new.png" height="200px">   |
+
+| UPDATE DATA                                                                              
+|-------------------------------------------------|
+| <img src="https://i.ibb.co/c1t9Jc9/update.png " height="200px"> | 
+
+
 ## Technology used  
   
 * [Python 3.8.10](https://www.python.org/)  
