@@ -1,4 +1,5 @@
 # MVC Demo
+[![GitHub issues](https://img.shields.io/github/issues/Albert-Byrone/mvcdemo)](https://github.com/otsembo/DataParser/DataParser) [![GitHub forks](https://img.shields.io/github/forks/Albert-Byrone/mvcdemo)](https://github.com/otsembo/DataParser/network) [![GitHub stars](https://img.shields.io/github/stars/Albert-Byrone/mvcdemo)](https://github.com/otsembo/DataParser/stargazers) [![GitHub license](https://img.shields.io/github/license/Albert-Byrone/mvcdemo)](https://github.com/otsembo/DataParser/blob/main/LICENSE)
 
 ## Description  
 
