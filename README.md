@@ -1,8 +1,5 @@
 # MVC Demo
-## Author  
-  
-[Albert-Byrone](https://github.com/Albert-Byrone)  
-  
+
 ## Description  
 
 This is a simple CRUD application to demonstrate the implementation of MVC/MVT design pattern in Django
@@ -68,6 +65,10 @@ Open the application on your browser `127.0.0.1:8000`.
   
 ## Contact Information   
 If you have any question or contributions, please email me at albertbyrone1677@gmail.com
+
+## Author  
+  
+[Albert-Byrone](https://github.com/Albert-Byrone)  
 
 ## License 
 * MIT License:*
