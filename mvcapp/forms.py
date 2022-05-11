@@ -1,5 +1,6 @@
 from ast import arg
 from pydoc import classname
+from pyexpat import model
 from django import forms
 from .models import Student
 
@@ -18,3 +19,9 @@ class StudentForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(StudentForm,self).__init__(*args, **kwargs)
         self.fields['classname'].empty_label = "Select Class"
+
+
+
+class StudentBulkForm(forms.ModelForm):
+    model = Student
+    fields = ("csv_file",)
